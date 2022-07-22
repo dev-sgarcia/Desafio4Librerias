@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--    ASIGNO MI FUENTE A OCUPAR   -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!--    LINK A MI HOJA DE ESTILOS   -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>SEGUNDA ENTREGA DEL PROYECTO FINAL</title>
+</head>
+
+<body>
+    <header>
+        <div class="titulo">
+            <h3>Desafío Entregable 4 - INCORPORANDO LIBRERÍAS</h3>
+        </div>
+        <div>
+            <h3>
+                Comisión: 37530
+                JavaScript.
+            </h3>
+            <h3>
+                Samuel Arturo García Sánchez
+            </h3>
+        </div>
+        <div>
+            <p class="titulo">
+                <b>Formato:</b> Página HTML y código fuente en JavaScript. Debe identificar el
+                apellido del alumno/a en el nombre de archivo comprimido por “claseApellido”.
+                <br>
+                <b>Sugerencia:</b> En la segunda entrega buscamos programar el código esencial para
+                garantizar dinamismo en el HTML con JavaScript.
+                En relación a la primer entrega, ya no usamos alert() como salida y promt() como
+                entrada, ahora modificamos el DOM para las salidas y capturamos los eventos del
+                usuario sobre inputs y botones para las entradas. Verificar Rúbrica.
+                <br>
+            </p>
+            <p>
+                <b>Objetivos Generales:</b>
+                <br>
+                1. Codificar funciones de procesos esenciales y notificación de resultados por HTML, añadiendo
+                interacción al
+                simulador.
+                <br>
+                2. Ampliar y refinar el flujo de trabajo del script en términos de captura de eventos, procesamiento del
+                simulador y notificación de resultados en forma de salidas por HTML, modificando el DOM.
+                <br>
+            </p>
+            <p>
+                <b>Objetivos Específicos:</b>
+                <br>
+                1. Definir eventos a manejar y su funciòn de respuesta.
+                <br>
+                2. Modificar el DOM, ya sea para definir elementos al cargar la página o para realizar salidas de un
+                procesamiento.
+                <br>
+                3. Almacenar datos (clave-valor) en el Storage y recuperarlos.
+                <br>
+            </p>
+
+            <p>
+                <b>Se debe entregar:</b>
+                <br>
+                - Implementación con uso de JSON y Storage.
+                <br>
+                - Modificación del DOM y detección de eventos de usuario.
+                <br>
+            </p>
+
+        </div>
+        <h3>Paquetes vacacionales cargados mediante el uso del archivo Js.</h3>
+        <ul type="1">
+            <li>Se usa bootstrap para darle formato y responsividad a las cards con los paquetes vacacionales.</li>
+            <li>Se linkea el archivo CSS para darle margen y color a la página.</li>
+            <li>Se linkea el archivo JS para <b>generar el HTML</b> y mostrar los paquetes mediante la manipulación del <b>DOM</b>.</li>
+            <li>Se cargan los paquetes vacacionales disponibles.</li>
+            <li>Si se presiona el botón de "Agregar al carrito" se detecta el <b>evento</b> y se agrega al carrito.</li>
+            <li>En el carrito, si se presiona "Finalizar compra" se detecta el <b>evento</b> del bóton comprar y se mandar
+                alert con el costo total.</li>
+            <li>Se agrega <b>LocalStorage</b> para que los datos del carrito se guarden.</li>
+            <li>Se agrega <b>librerías</b> para mostrar ventanas de pregunta y confirmación de compra.</li>            
+        </ul>
+    </header>
+
+    <main>
+        <div id="container-general">
+            <section id="section-paquetes"></section>
+            <section id="section-carrito"></section>
+        </div>
+    </main>
+
+    <footer>
+        <p>©Paquetes Vacacionales 2022. Todos los derechos reservados.</p>
+    </footer>
+
+    <!--    LINK A LIBRERIA SWEET ALERT -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>    
+    <!--    LINK A MIS ARCHIVOS JS    -->
+    <script src="./js/paquetes.js"></script>
+    <script src="./js/carrito.js"></script>
+</body>
+
+</html>
